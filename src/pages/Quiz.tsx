@@ -17,7 +17,7 @@ const Quiz = () => {
     const [currentQues, setCurrentQues] = useState<number>(0)
     const [result, setResult] = useState<resultInterface[]>([])
     const [choosedOption, setChoosedOption] = useState<number>(-1)
-    const [quizData, setQuizData] = useState<responseObjectInterface[]>(useLoaderData() as responseObjectInterface[])
+    const [quizData] = useState<responseObjectInterface[]>(useLoaderData() as responseObjectInterface[])
 
     const randomColor = () => {
         const color = [["red-50", "red-700", "red-600/10"], ["yellow-50", "yellow-800", "yellow-600/20"], ["green-50", "green-700", "green-600/20"], ["blue-50", "blue-700", "blue-700/10"], ["purple-50", "purple-700", "purple-700/10"], ["indigo-50", "indigo-700", "indigo-700/10"]]
@@ -152,7 +152,7 @@ const Quiz = () => {
                                     <text className="text-lg text-justify font-medium md:text-3xl">{quesData.question}</text>
                                     <div className="flex gap-3 ">
                                         {
-                                            quesData.tags.map((tag, tagIndex) => {
+                                            quesData.tags.map((tag) => {
                                                 return (
                                                     <RandomColor tag={tag.name} colorPicker={memoRandomColor} />
                                                 )
