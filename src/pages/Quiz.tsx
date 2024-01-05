@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useMemo, useRef, useState } from "react"
 import { useLoaderData, useNavigate } from "react-router-dom"
 import RandomColor from "../components/ui/RandomColor";
@@ -131,7 +132,7 @@ const Quiz = () => {
                         <text className="font-medium">{`${currentQues + 1} / ${quizData.length}`}</text>
                     </div>
                     <div ref={ref2} className="radial-progress bg-primary text-secondary-content border-2 border-primary"
-                        style={{ "--value": time / 3, "--size": "2.5rem", "--thickness": "0.2rem" }}
+                        style={{ "--value": time / 3, "--size": "2.5rem", "--thickness": "0.2rem" } as React.CSSProperties}
                         role="progressbar"
                     >
                         {time / 10}
