@@ -14,25 +14,25 @@ const Home = () => {
           <p className=" text-lg md:text-xl">Quizzer, automates question generation, removes redundancies and ensures top-notch quiz quality. Say goodbye to tedious quiz preparation and hello to efficiency!</p>
         </div>
         <div className=" w-11/12 md:w-3/5 flex flex-col items-center">
-          <button className="btn btn-accent px-12 btn-md lg:btn-lg md:px-20" onClick={()=> navigate("/takequiz")}>Take Quiz</button>
+          <button className="btn btn-accent px-12 btn-md lg:btn-lg md:px-20" onClick={() => navigate("/takequiz")}>Take Quiz</button>
           <p className=" text-xs md:hidden font-extralight mt-2 text-center ">It hardly takes 3 Minutes<br />Make it Happen</p>
           <div className="hidden md:flex justify-end w-10/12 gap-3">
-            <img src="/src/assets/tryit_arrow.svg" alt="tilt-arrow" className="h-12 w-12 md:h-28 md:w-28" />
+            <img src="/assets/tryit_arrow.svg" alt="tilt-arrow" className="h-12 w-12 md:h-28 md:w-28" />
             <p className=" text-xs md:text-sm font-extralight md:mt-3 text-center -rotate-12">It hardly takes 3 Minutes<br />Make it Happen</p>
           </div>
         </div>
       </div>
 
       <div className=" flex flex-col gap-10 items-center justify-center md:flex-row">
-        <button className="btn flex gap-3" onClick={()=> window.open("https://vercel.com/", "_blank")}>
-          <img src="/src/assets/vercel-icon.png" height={25} width={25} />
+        <button className="btn flex gap-3" onClick={() => window.open("https://vercel.com/", "_blank")}>
+          <img src="/assets/vercel-icon.png" height={25} width={25} />
           Deployed on Vercel
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
             <path d="M 37.058594 12.980469 C 36.246094 12.949219 35.492188 13.414063 35.160156 14.15625 C 34.824219 14.898438 34.96875 15.765625 35.53125 16.359375 L 41.675781 23 L 3 23 C 2.277344 22.988281 1.609375 23.367188 1.246094 23.992188 C 0.878906 24.613281 0.878906 25.386719 1.246094 26.007813 C 1.609375 26.632813 2.277344 27.011719 3 27 L 41.675781 27 L 35.53125 33.640625 C 35.03125 34.164063 34.855469 34.914063 35.066406 35.605469 C 35.277344 36.296875 35.84375 36.820313 36.546875 36.976563 C 37.253906 37.132813 37.988281 36.894531 38.46875 36.359375 L 48.972656 25 L 38.46875 13.640625 C 38.109375 13.242188 37.597656 13 37.058594 12.980469 Z"></path>
           </svg>
         </button>
-        <button className="btn flex gap-3" onClick={()=> window.open("https://github.com/SUMANTH-hyphen/Quizzer.git", "_blank")}>
-          <img src="/src/assets/github-mark.png" height={25} width={25} />
+        <button className="btn flex gap-3" onClick={() => window.open("https://github.com/SUMANTH-hyphen/Quizzer.git", "_blank")}>
+          <img src="/assets/github-mark.png" height={25} width={25} />
           GitHub Source code
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
             <path d="M 37.058594 12.980469 C 36.246094 12.949219 35.492188 13.414063 35.160156 14.15625 C 34.824219 14.898438 34.96875 15.765625 35.53125 16.359375 L 41.675781 23 L 3 23 C 2.277344 22.988281 1.609375 23.367188 1.246094 23.992188 C 0.878906 24.613281 0.878906 25.386719 1.246094 26.007813 C 1.609375 26.632813 2.277344 27.011719 3 27 L 41.675781 27 L 35.53125 33.640625 C 35.03125 34.164063 34.855469 34.914063 35.066406 35.605469 C 35.277344 36.296875 35.84375 36.820313 36.546875 36.976563 C 37.253906 37.132813 37.988281 36.894531 38.46875 36.359375 L 48.972656 25 L 38.46875 13.640625 C 38.109375 13.242188 37.597656 13 37.058594 12.980469 Z"></path>
@@ -45,7 +45,7 @@ const Home = () => {
           <Player
             autoplay
             loop
-            src="/src/assets/bee-animation.json"
+            src="/assets/bee-animation.json"
             style={{ height: '400px', width: '400px' }}
           >
           </Player>
@@ -65,7 +65,7 @@ const Home = () => {
             <Player
               autoplay
               loop
-              src="/src/assets/cat-fishing.json"
+              src="/assets/cat-fishing.json"
               style={{ height: '300px', width: '300px' }}
             >
             </Player>
@@ -82,19 +82,19 @@ const Home = () => {
             <div className="card-body">
               <h2 className="card-title justify-center">Choose a mode</h2>
             </div>
-            <figure><img src="/src/assets/step-1.png" alt="step-1" /></figure>
+            <figure><img src="/assets/step-1.png" alt="step-1" /></figure>
           </div>
           <div className="card w-96 bg-base-100 shadow-2xl">
             <div className="card-body">
               <h2 className="card-title justify-center">Take the quiz</h2>
             </div>
-            <figure><img src="/src/assets/step-2.png" alt="step-1" /></figure>
+            <figure><img src="/assets/step-2.png" alt="step-1" /></figure>
           </div>
           <div className="card w-96 bg-base-100 shadow-2xl">
             <div className="card-body">
               <h2 className="card-title justify-center">Get your result</h2>
             </div>
-            <figure><img src="/src/assets/step-3.png" alt="step-1" /></figure>
+            <figure><img src="/assets/step-3.png" alt="step-1" /></figure>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@ const Home = () => {
         <div className="card lg:card-side shadow-xl bg-gradient-to-r from-blue-100 to-purple-100">
           <div className="card-body lg:card-side justify-between">
             <h1 className="card-title">Unlock a world of learning through our seamless quiz API integration. Explore diverse topics and test your knowledge effortlessly on our platform</h1>
-            <button className="btn btn-outline flex gap-3" onClick={()=> window.open("https://quizapi.io/", "_blank")}>
+            <button className="btn btn-outline flex gap-3" onClick={() => window.open("https://quizapi.io/", "_blank")}>
               Checkout
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
                 <path d="M 37.058594 12.980469 C 36.246094 12.949219 35.492188 13.414063 35.160156 14.15625 C 34.824219 14.898438 34.96875 15.765625 35.53125 16.359375 L 41.675781 23 L 3 23 C 2.277344 22.988281 1.609375 23.367188 1.246094 23.992188 C 0.878906 24.613281 0.878906 25.386719 1.246094 26.007813 C 1.609375 26.632813 2.277344 27.011719 3 27 L 41.675781 27 L 35.53125 33.640625 C 35.03125 34.164063 34.855469 34.914063 35.066406 35.605469 C 35.277344 36.296875 35.84375 36.820313 36.546875 36.976563 C 37.253906 37.132813 37.988281 36.894531 38.46875 36.359375 L 48.972656 25 L 38.46875 13.640625 C 38.109375 13.242188 37.597656 13 37.058594 12.980469 Z"></path>
